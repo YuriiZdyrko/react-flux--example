@@ -20,7 +20,7 @@ Flux:
 
 
 To run locally:
-git clone ...
-npm install
-gulp
-Then go to localhost:3000
+- git clone ...
+- npm install
+- gulp
+- in browser -> localhost:3000
