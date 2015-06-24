@@ -12,14 +12,12 @@ React:
 - using propTypes
 - passing data from child to parent
 - using local component state
-- DOM diffing
 
 Flux:
 - using Stores instead of props
 - persistance of data in Stores
 - unbinding from Store's events
 - using Actions to modify Stores as opposed to direct manipulation
-- benefits of central Dispatcher
 
 
 To run locally:
