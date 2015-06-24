@@ -4,13 +4,13 @@
 Hosted by github page : [http://banzay.github.io/react-flux--example/dist/](http://banzay.github.io/react-flux--example/dist/)
 
 React:
-- explain order of actions when creating components (first components when data)
+- order of actions when creating components (first components when data)
 - passing props from parent to child
 - using propTypes
 - passing data from child to parent
 - using local component state
-- explain DOM diffing
-- explain optimizations
+- DOM diffing
+- optimizations
 
 Flux:
 - using Stores instead of props
