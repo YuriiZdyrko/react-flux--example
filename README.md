@@ -13,7 +13,6 @@ React:
 - passing data from child to parent
 - using local component state
 - DOM diffing
-- optimizations
 
 Flux:
 - using Stores instead of props
