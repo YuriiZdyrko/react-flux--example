@@ -20,6 +20,10 @@ var Product = React.createClass({
     }.bind(this))
   },
 
+  componentWillUnmount: function() {
+    cartStore.removeChangeListener(this._onChange);
+  },
+
   _onChange: function() {
     var isAddedToCart = this._checkIfAddedToCart(cartStore.getItems());
     this.setState({isAddedToCart: isAddedToCart});

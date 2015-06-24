@@ -68,6 +68,10 @@ var App = React.createClass({
     }.bind(this))
   },
 
+  componentWillUnmount: function() {
+    cartStore.removeChangeListener(this._onChange);
+  },
+
   _onChange: function() {
     this.setState({cartItems: cartStore.getItems()});
   },
