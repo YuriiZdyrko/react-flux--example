@@ -1,5 +1,7 @@
-#Example for React-flux presentation
+#React-Flux example
+========================
 
+Hosted by github page : [http://banzay.github.io/react-flux--example/dist/](http://banzay.github.io/react-flux--example/dist/)
 
 React:
 - using propTypes
