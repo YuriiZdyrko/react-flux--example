@@ -12,7 +12,6 @@ React:
 - using propTypes
 - passing data from child to parent
 - using local component state
-- DOM diffing
 
 Flux:
 - using Stores instead of props
