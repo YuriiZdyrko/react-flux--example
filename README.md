@@ -5,8 +5,8 @@ Hosted by github page : [http://banzay.github.io/react-flux--example/dist/](http
 
 React:
 - explain order of actions when creating components (first components when data)
-- using propTypes
 - passing props from parent to child
+- using propTypes
 - passing data from child to parent
 - using local component state
 - explain DOM diffing
