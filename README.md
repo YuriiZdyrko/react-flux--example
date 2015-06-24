@@ -3,6 +3,9 @@
 
 Hosted by github page : [http://banzay.github.io/react-flux--example/dist/](http://banzay.github.io/react-flux--example/dist/)
 
+Setup: 
+- Gulp usage (jsx and browserify)
+
 React:
 - order of actions when creating components (first components when data)
 - passing props from parent to child
