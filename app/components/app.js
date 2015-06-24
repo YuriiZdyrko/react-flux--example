@@ -1,6 +1,7 @@
 var React = require('react');
 var Product = require('./product');
 var Cart = require('./cart');
+var cartStore = require('../cartStore');
 
 var App = React.createClass({
 
@@ -59,6 +60,16 @@ var App = React.createClass({
         }
       ]
     }
+  },
+
+  componentDidMount: function() {
+    cartStore.addChangeListener(function(newState) {
+      this._onChange();
+    }.bind(this))
+  },
+
+  _onChange: function() {
+    this.setState({cartItems: cartStore.getItems()});
   },
 
   _onAddToCart: function(product) {
