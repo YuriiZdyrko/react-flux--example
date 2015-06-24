@@ -3,13 +3,16 @@
 
 Hosted by github page : [http://banzay.github.io/react-flux--example/dist/](http://banzay.github.io/react-flux--example/dist/)
 
+Setup: 
+- Gulp usage (jsx and browserify)
+
 React:
-- using propTypes
+- order of actions when creating components (first components when data)
 - passing props from parent to child
+- using propTypes
 - passing data from child to parent
 - using local component state
-- explain DOM diffing
-- explain optimizations
+- DOM diffing
 
 Flux:
 - using Stores instead of props
