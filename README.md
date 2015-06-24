@@ -18,7 +18,6 @@ Flux:
 - persistance of data in Stores
 - unbinding from Store's events
 - using Actions to modify Stores as opposed to direct manipulation
-- benefits of central Dispatcher
 
 
 To run locally:
