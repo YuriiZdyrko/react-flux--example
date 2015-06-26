@@ -1,7 +1,6 @@
 var React = require('react');
 var Product = require('./product');
 var Cart = require('./cart');
-var cartStore = require('../cartStore');
 
 var App = React.createClass({
 
@@ -62,25 +61,6 @@ var App = React.createClass({
     }
   },
 
-  componentDidMount: function() {
-    cartStore.addChangeListener(function(newState) {
-      this._onChange();
-    }.bind(this))
-  },
-
-  componentWillUnmount: function() {
-    cartStore.removeChangeListener(this._onChange);
-  },
-
-  _onChange: function() {
-    this.setState({cartItems: cartStore.getItems()});
-  },
-
-  _onAddToCart: function(product) {
-    var newCartItems = this.state.cartItems.concat(product);
-    this.setState({cartItems: newCartItems});
-  },
-
   render: function() {
     // Example of parent->child communication
     return (
@@ -93,12 +73,12 @@ var App = React.createClass({
                 <Product
                   product={product}
                   key={index}
-                  onAddToCart={this._onAddToCart} />
+                />
               )
             }.bind(this))}
           </ul>
         </div>
-        <Cart items={this.state.cartItems} />
+        <Cart />
       </div>
     );
   }

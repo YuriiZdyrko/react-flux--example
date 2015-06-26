@@ -4,10 +4,6 @@ var cartStore = require('../cartStore');
 
 var Product = React.createClass({
 
-  propTypes: {
-    onAddToCart: React.PropTypes.func.isRequired
-  },
-
   getInitialState: function() {
     return {
       isAddedToCart: false

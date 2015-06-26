@@ -1,14 +1,36 @@
 var React = require('react');
+var cartStore = require('../cartStore');
 
 var Cart = React.createClass({
 
-  propTypes: {
-    items: React.PropTypes.array.isRequired
+  getInitialState: function() {
+    return {
+      cartItems: []
+    }
+  },
+
+  componentDidMount: function() {
+    cartStore.addChangeListener(function(newState) {
+      this._onChange();
+    }.bind(this))
+  },
+
+  componentWillUnmount: function() {
+    cartStore.removeChangeListener(this._onChange);
+  },
+
+  _onAddToCart: function(product) {
+    var newCartItems = this.state.cartItems.concat(product);
+    this.setState({cartItems: newCartItems});
+  },
+
+  _onChange: function() {
+    this.setState({cartItems: cartStore.getItems()});
   },
 
   render: function() {
     var totalClassName;
-    if (!this.props.items.length) {
+    if (!this.state.cartItems.length) {
       totalClassName = 'hidden';
     }
 
@@ -17,7 +39,7 @@ var Cart = React.createClass({
         <h1>Cart</h1>
 
         <ul>
-          {this.props.items.map(function(item, index) {
+          {this.state.cartItems.map(function(item, index) {
             return (
               <li key={index}>
                 <div>{item.name} {item.count}</div>
@@ -28,7 +50,7 @@ var Cart = React.createClass({
 
         <h3 className={totalClassName}>
           Total: $
-          {this.props.items.reduce(function(prev, curr, i, array) {
+          {this.state.cartItems.reduce(function(prev, curr, i, array) {
             prev += array[i].price;
             return prev;
           }, 0)}
