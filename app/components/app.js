@@ -9,50 +9,43 @@ var App = React.createClass({
       cartItems: [],
       products: [
         {
-          "id": "558a843a101751ae22ce9479",
-          "isAddedToCart": true,
+          "id": "1",
           "price": 3,
           "picture": "http://lorempixel.com/100/100/food/1",
           "name": "Pork chop"
         },
         {
-          "id": "558a843a6825eab048d43b95",
-          "isAddedToCart": false,
+          "id": "2",
           "price": 2,
           "picture": "http://lorempixel.com/100/100/food/2",
           "name": "Steak"
         },
         {
-          "id": "558a843a56f9adc8ff5a3705",
-          "isAddedToCart": false,
+          "id": "3",
           "price": 10,
           "picture": "http://lorempixel.com/100/100/food/3",
           "name": "Pork"
         },
         {
-          "id": "558a843a37804f382ae46e52",
-          "isAddedToCart": false,
+          "id": "4",
           "price": 5,
           "picture": "http://lorempixel.com/100/100/food/4",
           "name": "Cabbage"
         },
         {
-          "id": "558a843a8e01cbd37e0c1d2f",
-          "isAddedToCart": true,
+          "id": "5",
           "price": 100,
           "picture": "http://lorempixel.com/100/100/food/5",
           "name": "Chicken"
         },
         {
-          "id": "558a843a298ffc04c293eebc",
-          "isAddedToCart": false,
+          "id": "6",
           "price": 2,
           "picture": "http://lorempixel.com/100/100/food/6",
           "name": "Bacon"
         },
         {
-          "id": "558a843a4482581e061639fc",
-          "isAddedToCart": false,
+          "id": "7",
           "price": 3,
           "picture": "http://lorempixel.com/100/100/food/7",
           "name": "Fried chicken"
