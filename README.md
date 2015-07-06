@@ -4,7 +4,7 @@
 Hosted by github page : [http://banzay.github.io/react-flux--example/dist/](http://banzay.github.io/react-flux--example/dist/)
 
 Setup for example-react: 
-- u must have gulp installed
+- you must have gulp installed
 - git clone ...
 - git reset --hard 6fa422e104befe70c226222a9d6b124aaf5b84af
 
