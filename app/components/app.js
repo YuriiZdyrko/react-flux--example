@@ -41,13 +41,13 @@ var App = React.createClass({
         {
           "id": "6",
           "price": 2,
-          "picture": "http://lorempixel.com/100/100/food/6",
+          "picture": "http://lorempixel.com/100/100/animals/6",
           "name": "fish"
         },
         {
           "id": "7",
           "price": 3,
-          "picture": "http://lorempixel.com/100/100/food/7",
+          "picture": "http://lorempixel.com/100/100/animals/7",
           "name": "hamster"
         }
       ]
