@@ -11,44 +11,44 @@ var App = React.createClass({
         {
           "id": "1",
           "price": 3,
-          "picture": "http://lorempixel.com/100/100/food/1",
-          "name": "Pork chop"
+          "picture": "http://lorempixel.com/100/100/animals/1",
+          "name": "cat"
         },
         {
           "id": "2",
           "price": 2,
-          "picture": "http://lorempixel.com/100/100/food/2",
-          "name": "Steak"
+          "picture": "http://lorempixel.com/100/100/animals/2",
+          "name": "dog"
         },
         {
           "id": "3",
           "price": 10,
-          "picture": "http://lorempixel.com/100/100/food/3",
-          "name": "Pork"
+          "picture": "http://lorempixel.com/100/100/animals/3",
+          "name": "chicken"
         },
         {
           "id": "4",
           "price": 5,
-          "picture": "http://lorempixel.com/100/100/food/4",
-          "name": "Cabbage"
+          "picture": "http://lorempixel.com/100/100/animals/4",
+          "name": "snake"
         },
         {
           "id": "5",
           "price": 100,
-          "picture": "http://lorempixel.com/100/100/food/5",
-          "name": "Chicken"
+          "picture": "http://lorempixel.com/100/100/animals/5",
+          "name": "spider"
         },
         {
           "id": "6",
           "price": 2,
           "picture": "http://lorempixel.com/100/100/food/6",
-          "name": "Bacon"
+          "name": "fish"
         },
         {
           "id": "7",
           "price": 3,
           "picture": "http://lorempixel.com/100/100/food/7",
-          "name": "Fried chicken"
+          "name": "hamster"
         }
       ]
     }
